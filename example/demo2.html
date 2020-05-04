@@ -1,0 +1,34 @@
+<!--
+ * @Author: your name
+ * @Date: 2020-04-20 10:45:04
+ * @LastEditTime: 2020-04-21 10:12:50
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: /learn-basic/example/demo2.html
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script type="text/javascript" src="../assets/js/vue.js"></script>
+</head>
+<body>
+  <div id="app">
+    <p v-if="isLogin">你好，potato</p>
+    <p v-else>sorry，请登录</p>
+    <p v-if="isLhy">你好，lhy</p>
+  </div>
+  <script type="text/javascript">
+    var app = new Vue({
+      el: '#app',
+      data: {
+        isLogin: false,
+        isLhy: false
+      }
+    })
+  </script>
+</body>
+</html>

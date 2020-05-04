@@ -1,0 +1,42 @@
+<!--
+ * @Author: your name
+ * @Date: 2020-04-12 21:14:40
+ * @LastEditTime: 2020-04-24 16:10:12
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: /learn-basic/example/demo1.html
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script type="text/javascript" src="../assets/js/vue.js"></script>
+</head>
+<body>
+  <p>Hello world</p>
+  <hr>
+  <div id="app">{{message}}
+    <input type="text" v-on:focus="lhy">
+    <button v-on:click="changeData"></button>
+  </div>
+  <script type="text/javascript">
+    var app = new Vue({
+      el: '#app',
+      data: {
+        message: 'hello world'
+      },
+      methods: {
+        changeData: function() {
+          console.log('changeData');
+        },
+        lhy: function() {
+          console.log('lhy');
+        }
+      }
+    })
+  </script>
+</body>
+</html>
